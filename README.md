@@ -1,13 +1,13 @@
-Spark Core library for communicating with iRobot Roomba vacuums.
+Spark Core library for communicating with iRobot<sup>&reg;</sup> Roomba<sup>&reg;</sup> vacuums.
 ===
 
 > This library has been tested on the following devices:
 > 
 > 
-> * Roomba 530
+> * Roomba<sup>&reg;</sup> 530
 >
 >
-> You will need to create a cable to connect your Photon to the Roomba's serial port.
+> You will need to create a cable to connect your Photon to the Roomba<sup>&reg;</sup>'s serial port.
 
 
 ### Example code
