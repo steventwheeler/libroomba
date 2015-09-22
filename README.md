@@ -1,4 +1,4 @@
-Spark Core library for communicating with iRobot<sup>&reg;</sup> Roomba<sup>&reg;</sup> vacuums.
+Particle Photon library for communicating with iRobot<sup>&reg;</sup> Roomba<sup>&reg;</sup> vacuums.
 ===
 
 > This library has been tested on the following devices:
