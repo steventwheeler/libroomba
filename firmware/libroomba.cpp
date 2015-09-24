@@ -382,7 +382,7 @@ int LibRoomba::vWriteSong(uint8_t songNumber, uint8_t noteCount, va_list songDat
 
   // Copy the song data bytes into the new array.
   for (int i = 0; i < noteCount * 2; i++) {
-    array[i + 3] = va_arg(songData, uint8_t);
+    array[i + 3] = (uint8_t) va_arg(songData, int);
   }
 
   // Write the command and song data to the serial port.
