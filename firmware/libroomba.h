@@ -19,16 +19,38 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-#ifndef _LIBROOMBA
-#define _LIBROOMBA
+#ifndef FIRMWARE_LIBROOMBA_H_
+#define FIRMWARE_LIBROOMBA_H_
 
-#include "application.h"
 #include <stdarg.h>
+#include "application.h"
 
-enum SensorGroup { ALL = 0, PHYSICAL = 1, INTERNAL = 2, BATTERY = 3 };
-enum Motor { MAIN_BRUSH = 0, VACUUM = 1, SIDE_BRUSH = 2 };
-enum LED { STATUS_GREEN = 0, STATUS_RED = 1, SPOT = 2, CLEAN = 3, MAX = 4, DIRT_DETECT = 5 };
-enum PowerLED { COLOR, INTENSITY };
+enum SensorGroup {
+  ALL = 0,
+  PHYSICAL = 1,
+  INTERNAL = 2,
+  BATTERY = 3
+};
+
+enum Motor {
+  MAIN_BRUSH = 0,
+  VACUUM = 1,
+  SIDE_BRUSH = 2
+};
+
+enum LED {
+  STATUS_GREEN = 0,
+  STATUS_RED = 1,
+  SPOT = 2,
+  CLEAN = 3,
+  MAX = 4,
+  DIRT_DETECT = 5
+};
+
+enum PowerLED {
+  COLOR,
+  INTENSITY
+};
 
 class LibRoomba {
   public:
@@ -111,6 +133,7 @@ class LibRoomba {
 
     // Sensor control.
     int updateSensors();
+
   private:
     // Private variables.
     int _ddPin;
@@ -134,4 +157,4 @@ class LibRoomba {
     void commandDelay(uint8_t command);
 };
 
-#endif
+#endif  // FIRMWARE_LIBROOMBA_H_
