@@ -23,6 +23,11 @@
 
 // Initialize the LibRoomba class.
 LibRoomba::LibRoomba() {
+  _ddPin = -1;
+  _debug = false;
+  _motorState = [3];
+  _ledState = [6];
+
   // The sensor data should default to zeros.
   for (int i = 0; i < 26; i++) {
     _sensorData[i] = 0;
