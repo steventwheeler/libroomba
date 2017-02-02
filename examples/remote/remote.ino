@@ -1,10 +1,12 @@
+// Example usage for libroomba library by Steven Wheeler <steventwheeler@gmail.com>.
 #include "libroomba.h"
 
-LibRoomba roomba;
+// Initialize objects from the lib
+Libroomba roomba;
 
 void setup() {
   // Configure the remote API.
-  Spark.function("roomba", roombaControl);
+  Particle.function("roomba", roombaControl);
 
   // Enable the USB serial port for debug messages.
   Serial.begin(115200);
